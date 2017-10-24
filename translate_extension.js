@@ -132,7 +132,7 @@
   };
   
   $.ajax({
-    url: 'http://khanning.com/getlang',
+    url: 'http://cdn.rawgit.com/edutev/traductor/master/get_lang.js',
     dataType: 'jsonp',
     success: function( lang ) {
       defaultLang = lang;
