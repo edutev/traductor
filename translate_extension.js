@@ -132,19 +132,6 @@
       url: 'http://cdn.rawgit.com/edutev/translate_extension/master/translate_extension.js'
   };
   
-  $.ajax({
-    url: 'http://educacion.info.ve/getlang/',
-    dataType: 'jsonp',
-    success: function( lang ) {
-      defaultLang = lang;
-    },
-    error: function() {
-      console.log( "Unable to get default language" );
-      defaultLang = null;
-    },
-    complete: function() {
-      getYandexLanguages();
-    }
-  });
+
 
 } )( {} );
