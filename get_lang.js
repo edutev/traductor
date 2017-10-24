@@ -1,11 +1,3 @@
-/***********************************************
- * get_lang.js - node.js language parser       *
- *                                             *
- * Author: Kreg Hanning, 2014                  *
- *                                             *
- * echo's the 2 digit language code            *
- * the 'accept-language' header                *
- ***********************************************/
 
 var http = require( 'http' );
 http.createServer( function( req, res ) {
