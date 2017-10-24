@@ -1,15 +1,9 @@
-/********************************************************
- * translate_extension.js - Scratch Translation Block   *
- *                                                      *
- * Author: Kreg Hanning, 2014                           *
- *                                                      *
- * Powered by the yandex.com translation api            *
- ********************************************************/
+
 
 ( function( ext ) {
 
   var
-  API_KEY = '',    // Get API key from http://api.yandex.com/translate/
+  API_KEY = 'trnsl.1.1.20171024T144620Z.0ab0e4a70d925560.a2b9514f36f1b2c2bbb18c99113b06c9d986b41b',    // Get API key from http://api.yandex.com/translate/
   lastQuery = {},
   supportedLanguages = {},
   connection = {
@@ -135,11 +129,11 @@
     menus: {
       lang: []
     },
-      url: 'http://github.com/khanning/scratch-translation-block'
+      url: 'http://cdn.rawgit.com/edutev/translate_extension/master/translate_extension.js'
   };
   
   $.ajax({
-    url: 'http://khanning.com/getlang',
+    url: 'http://educacion.info.ve/getlang/',
     dataType: 'jsonp',
     success: function( lang ) {
       defaultLang = lang;
